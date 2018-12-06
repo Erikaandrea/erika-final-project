@@ -5,28 +5,37 @@
 {% block content %}
 
 <div class="container">
+
+
   <div class="row">
-    <div class="col">
-    <h1>Main headline</h1>
-    <p class="author">By {% for author in authors %}
-      <a href="{{ author.link }}" target="_blank">{{ author.name }}</a>{% if not loop.last %}{% if loop.revindex0 == 1 %} and {% else %}, {% endif %}{% endif %} {% endfor %}
-      <br> Published {{ publish_date }}
-    </p>
+    {% for member in members %}
+    <div class="col-md-6 col-lg-6">
+      <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="assets/img/members/{{ member.imagebw }}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title"><a href="{{ member.slug}}.html">{{ member.name }}</a></h5>
+          {% endfor %} 
+        </div>
+    </div>
+    </div>
+    <div class="col-md-6 col-lg-6">
+      <ul class="list-unstyled">
+  <li class="media">
+    <img class="mr-3" src=".../64x64" alt="Generic placeholder image">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">List-based media object</h5>
+      Cras 
+    </div>
+  </li>
+  </ul>
     </div>
   </div>
-  <div class="row">
-    <div class="col">
-    <p>
-      Lucas ipsum dolor <a href="detail-page.html">link to detail-page.html</a> amidala sith dooku solo moff organa obi-wan windu. Gamorrean binks wedge darth. Mon darth mon kit ponda solo. Moff watto ackbar mothma moff anakin. Lando skywalker lars fett calrissian lars organa. Organa kenobi wedge darth jawa skywalker anakin. Twi'lek kit darth calamari lando kamino droid. Darth jawa fett grievous maul. Palpatine obi-wan leia tusken raider dagobah. Twi'lek qui-gon boba antilles yoda thrawn. Wampa luuke wampa skywalker. Moff ponda ackbar dagobah kit lobot jinn solo.
-    </p>
-      <ul> 
-        {% for book in books %}
-          <li>{{ book.title }}, {{ book.author }}</li>
-        {% else %}
-          <li>This would display if the 'books' collection were empty</li>
-        {% endfor %}
-     </ul>
-    </div>
-  </div>
+  
+     
+    
+  
 </div>
+
 {% endblock %}
+
+

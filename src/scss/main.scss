@@ -21,3 +21,16 @@
 // Import partials
 @import "nav";
 
+.jumbotron-fluid {
+    background: url(../assets/img/Queen-portrait-1971-billboard-1548.jpg) no-repeat center;
+    background-size: cover;
+    min-height: 360px;
+
+    img {
+        background-size: cover;
+        max-height: 300px;
+        vertical-align: center;
+    }
+   
+}
+
