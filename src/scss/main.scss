@@ -20,7 +20,9 @@
 
 // Import partials
 @import "nav";
-
+body {
+    background-color: rgb(182, 183, 184);
+}
 .jumbotron-fluid {
     background: url(../assets/img/Queen-portrait-1971-billboard-1548.jpg) no-repeat center;
     background-size: cover;
@@ -30,7 +32,32 @@
         background-size: cover;
         max-height: 300px;
         vertical-align: center;
+        font-size: 100px;
+        
     }
    
 }
 
+.container { 
+    background-color: rgb(68, 68, 68);
+    margin: auto;
+    text-align: center;
+    color: antiquewhite;
+    text-shadow: 2px 3px red;
+    font-size: 30px;
+}
+
+.card {
+    margin:auto;
+    margin-bottom: 50px;
+}
+.media{
+    margin:auto;
+}
+.year {
+    color: aliceblue;
+}
+
+.title {
+    color: antiquewhite;
+}
