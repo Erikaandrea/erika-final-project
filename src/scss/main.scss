@@ -43,7 +43,7 @@ body {
     margin: auto;
     text-align: center;
     color: antiquewhite;
-    text-shadow: 2px 3px red;
+
     font-size: 30px;
 }
 
@@ -58,6 +58,16 @@ body {
     color: aliceblue;
 }
 
-.title {
+.main-title-queen {
     color: antiquewhite;
+    text-shadow: 2px 3px red;
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    
+}
+
+.context-queen {
+    color: antiquewhite;
+    text-shadow: 2px 3px red;
+    
 }
